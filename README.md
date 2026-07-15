@@ -99,9 +99,3 @@ Interpretation:
 For July, which had the highest average demand in 2017, the Mild temperature category recorded the highest average demand (5.62), followed closely by the Hot category (5.50). There were no Cold temperatue observations during July. Compared with the overall 2017 analysis, where Hot temperaures had the highest average demand was slighly higher under Mild temperatures, indicating that comfortable weather conditions may have encouraged greater usea of car-sharing service during the month with the highest demand. 
 
 
-
-
-
-
-SQL Query
-SELECT temp.temp_category AS Temperature, ROUND(AVG(c.demand), 2) AS Average_Demand FROM CarSharing_df c JOIN Time t ON c.id = t.id JOIN Temperature temp ON 
