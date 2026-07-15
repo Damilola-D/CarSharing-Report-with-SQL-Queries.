@@ -103,9 +103,5 @@ For July, which had the highest average demand in 2017, the Mild temperature cat
 
 
 
-
-
-
-Average demand for each temperature category in July
 SQL Query
 SELECT temp.temp_category AS Temperature, ROUND(AVG(c.demand), 2) AS Average_Demand FROM CarSharing_df c JOIN Time t ON c.id = t.id JOIN Temperature temp ON 
